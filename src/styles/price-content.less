@@ -1,0 +1,126 @@
+.price-header h1 {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+}
+.price-header a {
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+.price-header a:hover {
+	text-decoration: underline;
+}
+.breadcrums .current {
+	color: #aba9a7;
+}
+.breadcrums .current:hover {
+	text-decoration: none;
+	cursor: default;
+}
+.breadcrums {
+	padding-left: 0;
+	margin: 0;
+	list-style: none;
+}
+.breadcrums li {
+	display: inline;
+	position: relative;
+	padding-right: 40px;
+}
+.breadcrums li::after {
+	content: '';
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: #000;
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	transform: rotate(45deg);
+}
+.breadcrums li:last-child::after {
+	content: none;
+}
+.big-heading {
+	margin-top: 55px;
+	margin-bottom: 65px;
+	text-align: center;
+}
+.price-title {
+	margin: 0;
+	padding: 0 25px;
+	display: inline;
+	position: relative;
+	font-size: 48px;
+	line-height: 48px ;
+	text-align: center;
+	z-index: 2;
+	background: #fff url(../img/big-heading.jpg);
+	
+}
+.big-heading::after {
+	content: '';
+	display: block;
+	border-bottom: 2px solid #000;
+	position: relative;
+	top: -25px;
+	z-index: 1;
+}
+.custom-list-1 {
+	list-style: none;
+	padding: 0;
+	margin: 14px 0;
+}
+.custom-list-1 li {
+	position: relative;
+	margin-bottom: 15px;
+	padding-left: 20px;
+}
+.custom-list-1 li::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-color: #000;
+	left: 0;
+	top: 8px;
+	transform: rotate(45deg); 
+}
+.prices-table {
+	width: 100%;
+}
+.prices-table td {
+	width: 50%;
+}
+.prices-table td:last-child {
+	text-align: center;
+}
+.prices-columns {
+	margin: 60px 0;
+}
+.prices-column-left,
+.prices-column-right {
+	width: 460px;
+}
+.prices-column-left {
+	float: left;
+}
+.prices-column-right {
+	float: right;
+}
+/* Убраны лишние отступы в колонках */
+.prices-column-left *:first-child,
+.prices-column-right *:first-child {
+	margin-top: 0;
+}
+.prices-column-left *:last-child,
+.prices-column-right *:last-child {
+	margin-bottom: 0;
+}
+.prices-column-right p {
+	width: 380px;
+}
+.prices-column-left p {
+	width: 380px;
+}

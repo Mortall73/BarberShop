@@ -1,0 +1,80 @@
+
+body {
+	background: #000000 url(../../src/img/bgi.png) no-repeat center top;
+	background-size: 2670px auto;
+	min-width: 960px;
+	font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+body a {
+	text-decoration: none;
+	color: #fff;
+}
+/* Центровщик */
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/* "Распорка" в блоках для float элементов*/
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	text-align: center;
+	vertical-align: top;
+	color: #fff;
+	background-color: #000;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+	margin-right: 15px;
+	text-transform: uppercase;
+}
+.btn:hover, 
+.btn:active {
+	background-color: #663d15;
+}
+.btn:disabled:hover,
+.btn:disabled:active {
+	opacity: 0.5;
+}
+input {
+	width: 115px;
+	height: 40px;
+	border: 2px solid black;
+	margin-bottom: 20px;
+	margin-right: 18px;
+	padding-left: 20px;
+	outline:none;
+}
+input::-webkit-input-placeholder{
+	font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+input:focus::-webkit-input-placeholder {
+	color:transparent;
+}
+input:hover {
+	border: 2px solid #663d15;
+	outline:none;
+}
+
+/* Классы для javascript */
+.hidden {
+	display: none;
+}

@@ -1,0 +1,17 @@
+.main-navigation .active {
+	position: relative;
+	background: none;
+}
+.active::after {
+	content: '';
+	position: absolute;
+	height: 5px;
+	background-color: #fff;
+	bottom: 0;
+	left: 20px;
+	right: 20px;
+}
+.main-navigation .active a:hover {
+	background: none;
+	cursor: default;
+}
